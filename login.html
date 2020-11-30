@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+<!-- 头部 -->
+<header class="header clearfix">
+    <div class="header-left"><img src="./images/register/register-one.png" alt=""></div>
+    <div class="header-help">帮助</div>
+</header>
+<!-- 标志 -->
+<div class="logo">
+    <img src="./images/register/logo.png" alt="">
+</div>
+<!-- 正文 -->
+<article class="article">
+    <div class="art-one">
+        <input type="text" placeholder="请输入正确账号" id="user">
+        <!-- <img src="./images/register/register-two.png" alt="" class="re"> -->
+    </div>
+    <div class="art-two">
+        <input type="text" placeholder="请输入密码" id="pass">
+    </div>
+    <div class="but" id="but"><img src="./images/register/login-three.png" alt=""></div>
+</article>
+<footer class="footer">
+    <div class="footer-one">
+        <p>忘记密码</p>
+        <span>|</span>
+        <p>用户登录</p>
+    </div>
+    <div class="footer-two">登录即代表阅读并同意<span>服务协议</span></div>
+    <div class="footer-three">
+        <ul>
+            <li><img src="./images/login/login-microblog.png" alt=""></li>
+            <li><img src="./images/login/login-qq.png" alt=""></li>
+            <li><img src="./images/login/login-WeChat.png" alt=""></li>
+        </ul>
+    </div>
+</footer>
+</body>
+<script src="./js/touch-0.2.14.min.js"></script>
+<script src="./js/jquery-3.5.1.js"></script>
+<script src="./js/login.js"></script>
+<script>
+function setRem(){
+    var windw = document.documentElement.clientWidth || document.body.clientWidth;
+    var uiw = 750;
+    document.documentElement.style.fontSize = (windw/uiw)*10+'px'
+}
+setRem();
+window.onresize = setRem;
+</script>
+</html>

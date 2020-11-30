@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <link rel="stylesheet" href="./css/register.css">
+</head>
+<body>
+<!-- 头部 -->
+<header class="header clearfix">
+    <div class="header-left"><img src="./images/register/register-one.png" alt=""></div>
+    <div class="header-help">帮助</div>
+</header>
+<!-- 标志 -->
+<div class="logo">
+    <img src="./images/register/logo.png" alt="">
+</div>
+<!-- 正文 -->
+<article class="article">
+    <div class="art-one">
+        <input type="text" placeholder="请输入手机号" id="user">
+    </div>
+    <div class="art-two">
+        <input type="text" placeholder="请输pattern入验证码">
+        <img src="./images/register/register-two.png" alt="" class="re">
+    </div>
+    <div class="art-three">
+        <input type="text" placeholder="请输入密码" id="pass">
+    </div>
+    <div class="but" id="but"><img src="./images/register/login-three.png" alt=""></div>
+</article>
+<!-- 尾部 -->
+<footer class="footer">
+    <p>注册即代表同意 迷音 服务条款和隐私条款</p>
+</footer>
+</body>
+<!-- <script src="./js/zepto.js"></script> -->
+<script src="./js/touch-0.2.14.min.js"></script>
+<script src="./js/jquery-3.5.1.js"></script>
+<script src="./js/register.js"></script>
+<script>
+function setRem(){
+    var windw = document.documentElement.clientWidth || document.body.clientWidth;
+    var uiw = 750;
+    document.documentElement.style.fontSize = (windw/uiw)*10+'px'
+}
+    setRem();
+    window.onresize = setRem;
+</script>
+</html>

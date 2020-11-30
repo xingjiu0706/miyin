@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+}
+ul li{
+    list-style: none;
+}
+.header{
+    width: 100%;
+    height: 9.1rem;
+    display: flex;
+    background-image: linear-gradient(to right,#179fe3,#e932a7);
+    align-items: center;
+    .left{
+        width: 20.2rem;
+        img{
+            width: 4.4rem;
+            height: 4.4rem;
+            margin-left: 2.8rem;
+        }
+        p{
+            float: right;
+            height: 4.4rem;
+            line-height: 4.4rem;
+            font-size: 3.6rem;
+            color: rgba(255, 255, 255);
+        }
+    }
+    .center{
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+        align-items: center;
+        color:rgba(236, 52, 165);
+        font-size: 3.6rem;
+        height: 100%;
+        background: url(../images/home/home-8.png) no-repeat 50% 85%; 
+        background-size: 6.6rem;
+    }
+    .right{
+        width: 20.2rem;
+        img{
+            width: 4.4rem;
+            height: 4.4rem;
+            margin-right: 2.8rem;
+            float: right;
+        }
+        p{
+            height: 4.4rem;
+            line-height: 4.4rem;
+            font-size: 3.6rem;
+            color: rgba(255, 255, 255);
+        }
+    }
+}
+.swiper-slide img{
+    width: 100%;
+}
+// 分类
+.classify{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 3.2rem 0 1.7rem;
+    display: flex;
+    border-bottom: 0.1rem solid rgba(232, 232, 232);
+    ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        li{
+            padding-top: 3.8rem;
+            padding-bottom: 3.2rem;
+            width: 10.5rem;
+            .class-logo{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+            p{
+                text-align: center;
+                width: 100%;
+                font-size: 2.8rem;
+                color: rgba(51, 51, 51);
+            }
+        }
+    }
+}
+// 精选歌单
+.list{
+    width: 100%;
+    .list-title{
+        .list-left{
+            float: left;
+            padding: 4.2rem 0 3.2rem 3.1rem;
+            color: rgba(51, 51, 51);
+            font-size: 2.8rem;
+        }
+        .list-right{
+            height: 3.8rem;
+            float: right;
+            padding: 3.9rem 6.4rem 1.6rem 0;
+            p{
+                float: left;
+                padding-bottom: 0.8rem;
+ 
+            }
+            p:first-of-type{
+                margin-right: 7.2rem;
+            }
+            .line{
+                background: url(../images/home/home-8.png) no-repeat 50% 100%;
+                background-size: 4.4rem 0.4rem;
+                color: #ec32a5;
+            }
+        }
+    }
+    .list-art{
+        width: 100%;
+        overflow: hidden;
+        .inner{
+            width: 200%;
+            display: flex;
+            transition: all 1s;
+            ul{
+                display: flex;
+                width: 100%;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                li{
+                    img{
+                        width: 24rem;
+                        height: 23.3rem;
+                    }
+                    .box{
+                        width: 24rem;
+                        padding-left: 3.1rem;
+                        box-sizing: border-box;
+                        p:nth-of-type(1){
+                            color: rgba(51, 51, 51);
+                            font-size: 2.4rem;
+                            padding-top: 1.6rem;
+                            padding-bottom: 1.2rem;
+                        }
+                        p:nth-of-type(2){
+                            color: rgba(153, 153, 153);
+                            font-size: 1.8rem;
+                            padding-bottom: 3.2rem;
+                        }
+                    }
+                }
+            }
+        }
+// 此处是为了控制inner的左移动和右移动
+        .move-left{
+            transform: translateX(-76rem);
+        }
+        .move-right{
+            transform: translateX(0rem);
+        }
+    }
+}
+.tianchong{
+    width: 100%;
+    height: 9.8rem;
+}
+.player{
+    position: fixed;
+    bottom: 0rem;
+    width: 100%;
+    height: 9.8rem;
+    background-image: linear-gradient(to right,#179fe3,#e932a7);
+    display: flex;
+    align-items: center;
+    .player-left{
+        height: 6.8rem;
+        margin-left: 3.2rem;
+        margin-right: 2rem;
+        img{
+            height: 100%;
+        }
+        
+    }
+    .zhuan{
+        animation: xuanzhuan 5s linear infinite;
+    }
+    .player-describe{
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        p:nth-of-type(1){
+            padding-bottom: 1rem;
+            font-size: 2.4rem;
+            color: rgba(255, 255, 255);
+        }
+        p:nth-of-type(2){
+            font-size: 2rem;
+            color: rgba(255, 255, 255);
+        }
+    }
+    .player-tool{
+        display: flex;
+        align-items: center;
+        .tool-but{
+            margin-right: 3.2rem;
+            width: 4.4rem;
+            height: 4.4rem;
+        }
+        .tool-list{
+            margin-right: 3.2rem;
+            width: 4.4rem;
+            height: 4.4rem;
+            img{
+                width: 100%;
+            }
+        }
+// 此处是为了控制播放按钮的替换
+        .tool-play{
+            background: url(../images/home/home-5.png) no-repeat;
+            background-size: 4.4rem;
+        }
+        .tool-stop{
+            background: url(../images/home/home-4.png) no-repeat;
+            background-size: 4.4rem;
+        }
+    }
+}
+.player-list{
+    position: fixed;
+    bottom: 9.8rem;
+    right: 0;
+    background-image: linear-gradient(to right,#179fe3,#e932a7);
+    width: 40rem;
+    display: none;
+    ul{
+        li{
+            text-align: center;
+            padding: 2rem;
+            font-size: 3rem;
+            color: rgba(0, 0, 0, 0.5);
+        }
+    }
+}
+@keyframes xuanzhuan{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
